@@ -1,0 +1,28 @@
+#toggle {
+  margin: auto;
+  text-align: right;
+  font-size: 25px;
+}
+.toggle1 {
+  margin-left: 40px;
+  color: white;
+}
+@media (min-width: 992px) {
+  .sotiladi {
+    position: relative;
+    top: 17px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  #toggle {
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+  }
+  .toggle1 {
+    margin-left: 0px;
+  }
+}

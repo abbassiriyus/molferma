@@ -1,0 +1,28 @@
+.Boglanish {
+  margin-top: 140px;
+  display: flex;
+  background-color: #14273ea8;
+}
+.map {
+  margin: 40px;
+  height: 65vh;
+}
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  width: 50%;
+  height: 65vh;
+}
+@media (max-width: 776px) {
+  .Boglanish {
+    display: block;
+  }
+  .form {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
+}
