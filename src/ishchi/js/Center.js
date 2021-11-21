@@ -7,7 +7,7 @@ import {  GiBullHorns, GiCow, GiMilkCarton, GiOpenedFoodCan } from "react-icons/
 import { ImUserPlus} from "react-icons/im";
 import { AiFillDollarCircle} from "react-icons/ai";
 import { BsBucketFill } from "react-icons/bs";
-import { BrowserRouter,Switch,Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes ,Route, Link } from "react-router-dom";
 import Hodim from "./Hodim";
 import Sut from './Sut'
 import Tree from './Tree'
@@ -79,29 +79,15 @@ theme="dark"
                   className="site-layout-background"
                   style={{ padding: 24, minHeight: "80vh" }}
                 >
-        <Switch>
-      <Route exact path="/admin/hodim">
-      <Hodim />
-      </Route>
-      <Route exact path="/admin/astatka">
-      <Astatka />
-      </Route>
-      <Route exact path="/admin/mollar">
-      <Mollar />
-      </Route>
-      <Route exact path="/admin/ozuqalar">
-      <Ozuqalar />
-      </Route>
-      <Route exact path="/admin/">
-      <Taxrirlash />
-      </Route>
-      <Route path="/admin/sut">
-          <Sut />
-      </Route>
-      <Route path="/admin/tree">
-          <Tree />
-      </Route>
-    </Switch>
+        <Routes>
+      <Route exact path="/admin/hodim" element={ <Hodim />}/>
+      <Route exact path="/admin/astatka" element={<Astatka />}/>
+      <Route exact path="/admin/mollar" element={<Mollar />}/>
+      <Route exact path="/admin/ozuqalar" element={<Ozuqalar />}/>
+      <Route exact path="/admin/" element={ <Taxrirlash />}/>
+      <Route path="/admin/sut" element={<Sut />}/>
+      <Route path="/admin/tree" element={<Tree />}/>
+    </Routes>
                 </div>
               </Content>
               <Footer style={{ textAlign: "center" }}>

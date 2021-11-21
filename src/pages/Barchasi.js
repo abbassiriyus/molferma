@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router";
+import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import Boglanish from "./js/Boglanish";
 
@@ -16,32 +16,16 @@ export default class App extends Component {
     return (
       <div>
         <BrowserRouter>
-          <Switch>
-            <Route path="/ishtartibi">
-              <Ishtartibi />
-            </Route>
-            <Route path="/Smol">
-              <Smol />
-            </Route>{" "}
-            <Route path="/Ssut">
-              <Ssut />
-            </Route>
-            <Route path="/Syem">
-              <Syem />
-            </Route>
-            <Route path="/boglanish">
-              <Boglanish />
-            </Route>
-            <Route path="/hodimlar">
-              <Hodimlar />
-            </Route>
-            <Route path="/mollar">
-              <Mollar />
-            </Route>
-            <Route path="/">
-              <BoshSahifa />
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/ishtartibi" element={ <Ishtartibi />} />
+            <Route path="/" element={ <Smol />}/>
+            <Route path="/Ssut" element={<Ssut />}/>
+              <Route path="/Syem" element={<Syem />}/>
+            <Route path="/boglanish" element={<Boglanish />}/>
+            <Route path="/hodimlar" element={<Hodimlar />}/>
+            <Route path="/mollar" element={<Mollar />}/>
+            <Route path="/" element={<BoshSahifa />}/>
+          </Routes>
         </BrowserRouter>
       </div>
     );
