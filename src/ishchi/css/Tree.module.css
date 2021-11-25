@@ -1,3 +1,43 @@
-.btnPlus{
-    border: none;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.card1{
+    letter-spacing: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 500px;
+    display: flex;
+    height: 100px;
+    margin: 50px auto;
+}
+.plus, .minus, .som{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plus, .minus{
+    cursor: pointer;
+    width: 100px;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom:10px;
+}
+
+.plus:hover{
+    color: rgb(57, 199, 29);
+}
+
+.som{
+    font-size: 35px;
+    width: 300px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.som span{
+    margin-left:16px ;
+}
+
+.minus:hover{
+    color:red;
 }
