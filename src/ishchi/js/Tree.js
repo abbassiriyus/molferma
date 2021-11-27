@@ -1,10 +1,12 @@
-
+ 
 import React,{useState, Component } from 'react'
 import style from '../css/Tree.module.css'
 import { Col, Container, Row, Modal,Button,Form} from "react-bootstrap";
+
 export default function Tree() {
   const [show, setShow] = useState(false);
 const [show1, setShow1] = useState(false);
+
 
   const handleClose1 = () => setShow1(false);
   const handleShow1 = () => setShow1(true);
@@ -24,7 +26,7 @@ const [show1, setShow1] = useState(false);
 
     <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Mabag` qo`shish</Modal.Title>
+          <Modal.Title>Mablag` qo`shish</Modal.Title>
         </Modal.Header>
         <Modal.Body>
         <Form.Label column="lg">
@@ -33,20 +35,9 @@ const [show1, setShow1] = useState(false);
     <Col>
       <Form.Control size="lg" type="Number" placeholder="Sum" />
     </Col>
- 
-  <br />
-  
-    <Form.Label column="lg">
-     Nima uchun 
-    </Form.Label>
-    <Col>
-      <Form.Control size ="lg" type="text" placeholder="sabab" />
-    </Col>
-  
-  <br />
-  
+  <br/>
   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-    <Form.Label column="lg">Text</Form.Label>
+    <Form.Label column="lg">  Nima uchun </Form.Label>
     <Form.Control as="textarea" rows={3} />
   </Form.Group>
         </Modal.Body>
@@ -65,32 +56,19 @@ const [show1, setShow1] = useState(false);
           <Modal.Title>Mablag` ayrish</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-        <>
-  
+      <br/>
     <Form.Label column="lg">
       Qancha ayirish kerak
     </Form.Label>
     <Col>
       <Form.Control size="lg" type="Number" placeholder="Sum" />
     </Col>
- 
-  <br />
-  
-    <Form.Label column="lg">
-     Nima uchun 
-    </Form.Label>
-    <Col>
-      <Form.Control size ="lg" type="text" placeholder="sabab" />
-    </Col>
-  
-  <br />
-  
+<br/>
   <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-    <Form.Label column="lg">Text</Form.Label>
+    <Form.Label column="lg">  Nima uchun </Form.Label>
     <Form.Control as="textarea" rows={3} />
   </Form.Group>
-  
-</>
+  <br/>
         </Modal.Body>
         <Modal.Footer>
           <Button variant="secondary" onClick={handleClose1}>
@@ -102,6 +80,37 @@ const [show1, setShow1] = useState(false);
         </Modal.Footer>
       </Modal>
 
+<Row className={style.cards}>
+     <div className={style.plusBoxs}> 
+      <div className={style.plusBox}>
+        <span className={style.plus}>+</span>
+        <span className={style.plusSum}>summa</span>
+      <p className={style.plusText}>Plus buttonga malumot kiritsak yozilishi kerak</p>
+       <span className={style.plusDate}>26.11.2021</span>
+      </div>
+      <div className={style.plusBox}>
+        <span className={style.plus}>+</span>
+        <span className={style.plusSum}>summa</span>
+      <p className={style.plusText}>Plus buttonga malumot kiritsak yozilishi kerak</p>
+       <span className={style.plusDate}>26.11.2021</span>
+      </div>
+      </div>
+
+      <div className={style.minusBoxs}>
+      <div className={style.minusBox}>
+        <span className={style.minus}>-</span>
+        <span className={style.minusSum}>summa</span>
+        <p className={style.minusText}>Minus buttonga malumot kiritsak yozilishi kerak</p>
+        <span className={style.minusDate}>26.11.2021</span>
+      </div>
+      <div className={style.minusBox}>
+        <span className={style.minus}>-</span>
+        <span className={style.minusSum}>summa</span>
+        <p className={style.minusText}>Minus buttonga malumot kiritsak yozilishi kerak</p>
+        <span className={style.minusDate}>26.11.2021</span>
+      </div>
+      </div>
+    </Row>
     </div>
   )
 }
