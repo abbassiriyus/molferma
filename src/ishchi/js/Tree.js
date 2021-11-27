@@ -88,14 +88,7 @@ const [show1, setShow1] = useState(false);
       <p className={style.plusText}>Plus buttonga malumot kiritsak yozilishi kerak</p>
        <span className={style.plusDate}>26.11.2021</span>
       </div>
-      <div className={style.plusBox}>
-        <span className={style.plus}>+</span>
-        <span className={style.plusSum}>summa</span>
-      <p className={style.plusText}>Plus buttonga malumot kiritsak yozilishi kerak</p>
-       <span className={style.plusDate}>26.11.2021</span>
       </div>
-      </div>
-
       <div className={style.minusBoxs}>
       <div className={style.minusBox}>
         <span className={style.minus}>-</span>
@@ -103,6 +96,8 @@ const [show1, setShow1] = useState(false);
         <p className={style.minusText}>Minus buttonga malumot kiritsak yozilishi kerak</p>
         <span className={style.minusDate}>26.11.2021</span>
       </div>
+      </div>
+      <div className={style.minusBoxs}>
       <div className={style.minusBox}>
         <span className={style.minus}>-</span>
         <span className={style.minusSum}>summa</span>
