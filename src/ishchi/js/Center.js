@@ -2,8 +2,9 @@ import React from "react";
 import "antd/dist/antd.css";
 import "../css/center.css";
 import { Layout, Menu } from "antd";
-import {FaBookmark } from "react-icons/fa";
-import {  GiBullHorns, GiCow, GiMilkCarton, GiOpenedFoodCan } from "react-icons/gi";
+import {FaBook, FaBookmark } from "react-icons/fa";
+import {GoMailRead } from "react-icons/go";
+import {  GiBullHorns, GiCow, GiMilkCarton, GiOpenedFoodCan, GiPayMoney } from "react-icons/gi";
 import { ImUserPlus} from "react-icons/im";
 import { AiFillDollarCircle} from "react-icons/ai";
 import { BsBucketFill } from "react-icons/bs";
@@ -15,6 +16,10 @@ import Astatka from "./Astatka";
 import Mollar from "./Mollar";
 import Ozuqalar from "./Ozuqalar";
 import Taxrirlash from "./Taxrirlash";
+import Xabar from "./Xabar";
+import Sotuv from "./Sotuv";
+import Arxiv from "./Arxiv";
+
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
 
@@ -63,6 +68,17 @@ export default class Center extends React.Component {
                 <Menu.Item key="7" icon={<AiFillDollarCircle/>}>
                 <Link to='/admin/tree'>Mablagimiz</Link>
                 </Menu.Item>
+
+                <Menu.Item key="8" icon={<GoMailRead/>}>
+                <Link to='/admin/xabar'>Xabarlar</Link>
+                </Menu.Item>
+                <Menu.Item key="9" icon={<GiPayMoney/>}>
+                <Link to='/admin/sotuv'>Sotuv</Link>
+                </Menu.Item>
+                <Menu.Item key="10" icon={<FaBook/>}>
+                <Link to='/admin/arxiv'>Arxiv</Link>
+                </Menu.Item>
+
               </Menu>
             </Sider>
             <Layout className="site-layout">
@@ -87,6 +103,11 @@ theme="dark"
       <Route exact path="/admin/" element={ <Taxrirlash />}/>
       <Route path="/admin/sut" element={<Sut />}/>
       <Route path="/admin/tree" element={<Tree />}/>
+<Route path="/admin/xabar" element={<Xabar />}/>
+<Route path="/admin/sotuv" element={<Sotuv />}/>
+<Route path="/admin/arxiv" element={<Arxiv />}/>
+
+
     </Routes>
                 </div>
               </Content>

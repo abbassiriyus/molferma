@@ -1,6 +1,7 @@
  
 import React,{useState, Component } from 'react'
 import style from '../css/Tree.module.css'
+import 'antd/dist/antd.css';
 import { Col, Container, Row, Modal,Button,Form} from "react-bootstrap";
 
 export default function Tree() {
@@ -24,7 +25,7 @@ const [show1, setShow1] = useState(false);
 <div className={style.minus} onClick={handleShow1}>-</div>
 </div>
 
-    <Modal show={show} onHide={handleClose}>
+    <Modal show={show} onHide={handleClose} width="100%" >
         <Modal.Header closeButton>
           <Modal.Title>Mablag` qo`shish</Modal.Title>
         </Modal.Header>
@@ -51,7 +52,7 @@ const [show1, setShow1] = useState(false);
         </Modal.Footer>
       </Modal>
 
-      <Modal show={show1} onHide={handleClose1}>
+      <Modal show={show1} onHide={handleClose1} width="100%" >
         <Modal.Header closeButton>
           <Modal.Title>Mablag` ayrish</Modal.Title>
         </Modal.Header>
@@ -81,32 +82,42 @@ const [show1, setShow1] = useState(false);
       </Modal>
 
 <Row className={style.cards}>
-     <div className={style.plusBoxs}> 
+   <Col  sm={12} md={6} lg={4}>
+   <div className={style.plusBoxs}> 
       <div className={style.plusBox}>
-        <span className={style.plus}>+</span>
+        <span className={style.plus, style.cardPlus}>+</span>
         <span className={style.plusSum}>summa</span>
       <p className={style.plusText}>Plus buttonga malumot kiritsak yozilishi kerak</p>
        <span className={style.plusDate}>26.11.2021</span>
       </div>
       </div>
-      <div className={style.minusBoxs}>
+   </Col>
+
+     <Col sm={12} md={6} lg={4}>
+     <div className={style.minusBoxs}>
       <div className={style.minusBox}>
-        <span className={style.minus}>-</span>
+        <span className={style.minus, style.cardMinus}>-</span>
         <span className={style.minusSum}>summa</span>
         <p className={style.minusText}>Minus buttonga malumot kiritsak yozilishi kerak</p>
         <span className={style.minusDate}>26.11.2021</span>
       </div>
       </div>
+     </Col>
+
+      <Col sm={12} md={6} lg={4}>
       <div className={style.minusBoxs}>
       <div className={style.minusBox}>
-        <span className={style.minus}>-</span>
+        <span className={style.minus, style.cardMinus}>-</span>
         <span className={style.minusSum}>summa</span>
         <p className={style.minusText}>Minus buttonga malumot kiritsak yozilishi kerak</p>
         <span className={style.minusDate}>26.11.2021</span>
       </div>
-      </div>
+      </div> 
+      </Col>
     </Row>
     </div>
+
+
   )
 }
 
