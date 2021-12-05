@@ -1,4 +1,4 @@
-/* ============================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,36 +18,11 @@ body{
     text-align: left;
     background-color: #e2e8f0;    
 }
-/* =================================*/
-.address{
-    margin: auto;
-    text-align: center;
-    width: 200px;
-
-}
-.card1{
-    border: 1px solid red;
-margin: 30px;
-}
-.icons1{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   width: 50px;
-   height: 50px;
-   border-radius: 50%;
-   background-color: rgba(35, 35, 219, 0.808); 
-   box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-margin: auto;
-text-align: center;
-margin-bottom: 10px;
-}
-
-/* ======================================== */
 
 .main_body {
     padding: 15px;
 }
+
 .card {
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
@@ -79,6 +54,7 @@ margin-bottom: 10px;
     padding-right: 8px;
     padding-left: 8px;
 }
+
 .mb_3, .my-3 {
     margin-bottom: 1rem!important;
 }
@@ -86,20 +62,19 @@ margin-bottom: 10px;
 .bg_gray_300 {
     background-color: #ffffff;
 }
+
 .h_100 {
     height: 100%!important;
 }
+
 .shadow-none {
     box-shadow: none!important;
 }
+.form label{
+    margin: 17px 0 3px;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+}
 
-
-
-
-
-
-
-
-
-
-/* ===================================== */

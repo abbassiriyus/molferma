@@ -18,8 +18,7 @@ const [show1, setShow1] = useState(false);
   return (
     <div>
       
-       
-<div className={style.card1} >
+      <div className={style.card1} >    
 <div className={style.plus} onClick={handleShow}>+</div>
 <div className={style.som}>2345..<span>so`m</span></div>
 <div className={style.minus} onClick={handleShow1}>-</div>
